@@ -26,25 +26,25 @@ Over millennia, humans developed spoken languages to communicate. Language is at
 ### Examples of LLMs
 Here is a list of the top 10 LLMs on the market, listed in alphabetical order based on internet research:
 
-Bidirectional Encoder Representations from Transformers, commonly referred to as Bert.
+1.Bidirectional Encoder Representations from Transformers, commonly referred to as Bert.
 
-Claude.
+2.Claude.
 
-Cohere.
+3.Cohere.
 
-Enhanced Representation through Knowledge Integration, or Ernie.
+4.Enhanced Representation through Knowledge Integration, or Ernie.
 
-Falcon 40B.
+5.Falcon 40B.
 
-Galactica.
+6.Galactica.
 
-Generative Pre-trained Transformer 3, commonly known as GPT-3.
+7.Generative Pre-trained Transformer 3, commonly known as GPT-3.
 
-GPT-3.5.
+8.GPT-3.5.
 
-GPT-4.
+9.GPT-4.
 
-Language Model for Dialogue Applications, or Lamda.
+10.Language Model for Dialogue Applications, or Lamda.
 
 ### How do large language models work?
 
@@ -99,3 +99,122 @@ Zero-shot model. This is a large, generalized model trained on a generic corpus
 Fine-tuned or domain-specific models. Additional training on top of a zero-shot model such as GPT-3 can lead to a fine-tuned, domain-specific model. One example is OpenAI Codex, a domain-specific LLM for programming based on GPT-3.
 Language representation model. One example of a language representation model is Google's Bert, which makes use of deep learning and transformers well suited for NLP.
 Multimodal model. Originally LLMs were specifically tuned just for text, but with the multimodal approach it is possible to handle both text and images. GPT-4 is an example of this type of model.
+
+### The future of large language models
+
+![image](https://github.com/user-attachments/assets/9789cda4-2f4e-40d4-9d7a-f769fe8b62ec)
+
+The future of LLMs is still being written by the humans who are developing the technology, though there could be a future in which the LLMs write themselves, too. The next generation of LLMs will not likely be artificial general intelligence or sentient in any sense of the word, but they will continuously improve and get "smarter."LLMs will also continue to expand in terms of the business applications they can handle. Their ability to translate content across different contexts will grow further, likely making them more usable by business users with different levels of technical expertise.LLMs will continue to be trained on ever larger sets of data, and that data will increasingly be better filtered for accuracy and potential bias, partly through the addition of fact-checking capabilities. It's also likely that LLMs of the future will do a better job than the current generation when it comes to providing attribution and better explanations for how a given result was generated.Enabling more accurate information through domain-specific LLMs developed for individual industries or functions is another possible direction for the future of large language models. Expanded use of techniques such as reinforcement learning from human feedback, which OpenAI uses to train ChatGPT, could help improve the accuracy of LLMs too. There's also a class of LLMs based on the concept known as retrieval-augmented generation -- including Google's Realm, which is short for Retrieval-Augmented Language Model -- that will enable training and inference on a very specific corpus of data, much like how a user today can specifically search content on a single site.
+There's also ongoing work to optimize the overall size and training time required for LLMs, including development of Meta's Llama model. Llama 2, which was released in July 2023, has less than half the parameters than GPT-3 has and a fraction of the number GPT-4 contains, though its backers claim it can be more accurate.On the other hand, the use of large language models could drive new instances of shadow IT in organizations. CIOs will need to implement usage guardrails and provide training to avoid data privacy problems and other issues. LLMs could also create new cybersecurity challenges by enabling attackers to write more persuasive and realistic phishing emails or other malicious communications.Nonetheless, the future of LLMs will likely remain bright as the technology continues to evolve in ways that help improve human productivity.
+
+### Overview of large language models:
+
+![image](https://github.com/user-attachments/assets/b8728a24-5434-4338-96e7-70f991da9c2f)
+
+### Topic 2: Introduction to Generative AI
+### Aim:
+To introduce the concept of Generative AI, explain how it works, and discuss its applications and challenges.
+
+### Procedure:
+1.Define Generative AI and outline its key characteristics.
+2.Illustrate the process by which Generative AI creates new data (e.g., text, images, or music).
+3.Identify real-world applications of Generative AI in fields like healthcare, entertainment, and content creation.
+4.Discuss the advantages and challenges of Generative AI, focusing on creative automation, efficiency, and ethical concerns.
+5.Summary of benefits and challenges
+
+### What is Generative AI?
+Generative AI enables users to quickly generate new content based on a variety of inputs. Inputs and outputs to these models can include text, images, sounds, animation, 3D models, or other types of data.
+
+### How Does Generative AI Work?
+Generative AI models use neural networks to identify the patterns and structures within existing data to generate new and original content.
+One of the breakthroughs with generative AI models is the ability to leverage different learning approaches, including unsupervised or semi-supervised learning for training. This has given organizations the ability to more easily and quickly leverage a large amount of unlabeled data to create foundation models. As the name suggests, foundation models can be used as a base for AI systems that can perform multiple tasks. 
+Examples of foundation models include GPT-3 and Stable Diffusion, which allow users to leverage the power of language. For example, popular applications like ChatGPT, which draws from GPT-3, allow users to generate an essay based on a short text request. On the other hand, Stable Diffusion allows users to generate photorealistic images given a text input.
+
+### How to Evaluate Generative AI Models?
+1.Quality: Especially for applications that interact directly with users, having high-quality generation outputs is key. For example, in speech generation, poor speech quality is difficult to understand. Similarly, in image generation, the desired outputs should be visually indistinguishable from natural images.
+2.Diversity: A good generative model captures the minority modes in its data distribution without sacrificing generation quality. This helps reduce undesired biases in the learned models.
+3.Speed: Many interactive applications require fast generation, such as real-time image editing to allow use in content creation workflows.
+
+![image](https://github.com/user-attachments/assets/e4d73ba5-a502-4de6-8499-1ddc855a28ea)
+
+### How to Develop Generative AI Models?
+There are multiple types of generative models, and combining the positive attributes of each results in the ability to create even more powerful models.
+Below is a breakdown:
+Diffusion models: Also known as denoising diffusion probabilistic models (DDPMs), diffusion models are generative models that determine vectors in latent space through a two-step process during training. The two steps are forward diffusion and reverse diffusion. The forward diffusion process slowly adds random noise to training data, while the reverse process reverses the noise to reconstruct the data samples. Novel data can be generated by running the reverse denoising process starting from entirely random noise.
+
+![image](https://github.com/user-attachments/assets/a447cf47-5a92-40b4-b1ec-3393450292ac)
+
+A diffusion model can take longer to train than a variational autoencoder (VAE) model, but thanks to this two-step process, hundreds, if not an infinite amount, of layers can be trained, which means that diffusion models generally offer the highest-quality output when building generative AI models.
+Additionally, diffusion models are also categorized as foundation models, because they are large-scale, offer high-quality outputs, are flexible, and are considered best for generalized use cases. However, because of the reverse sampling process, running foundation models is a slow, lengthy process.
+Variational autoencoders (VAEs): VAEs consist of two neural networks typically referred to as the encoder and decoder.
+When given an input, an encoder converts it into a smaller, more dense representation of the data. This compressed representation preserves the information that’s needed for a decoder to reconstruct the original input data, while discarding any irrelevant information. The encoder and decoder work together to learn an efficient and simple latent data representation. This allows the user to easily sample new latent representations that can be mapped through the decoder to generate novel data.
+While VAEs can generate outputs such as images faster, the images generated by them are not as detailed as those of diffusion models.
+Generative adversarial networks (GANs): Discovered in 2014, GANs were considered to be the most commonly used methodology of the three before the recent success of diffusion models. GANs pit two neural networks against each other: a generator that generates new examples and a discriminator that learns to distinguish the generated content as either real (from the domain) or fake (generated).
+The two models are trained together and get smarter as the generator produces better content and the discriminator gets better at spotting the generated content. This procedure repeats, pushing both to continually improve after every iteration until the generated content is indistinguishable from the existing content.
+While GANs can provide high-quality samples and generate outputs quickly, the sample diversity is weak, therefore making GANs better suited for domain-specific data generation.
+Another factor in the development of generative models is the architecture underneath. One of the most popular is the transformer network. It is important to understand how it works in the context of generative AI.
+Transformer networks: Similar to recurrent neural networks, transformers are designed to process sequential input data non-sequentially.
+Two mechanisms make transformers particularly adept for text-based generative AI applications: self-attention and positional encodings. Both of these technologies help represent time and allow for the algorithm to focus on how words relate to each other over long distances
+
+![image](https://github.com/user-attachments/assets/cf6510b7-a109-4157-ba06-3375bcca9b10)
+
+A self-attention layer assigns a weight to each part of an input. The weight signifies the importance of that input in context to the rest of the input. Positional encoding is a representation of the order in which input words occur.
+A transformer is made up of multiple transformer blocks, also known as layers. For example, a transformer has self-attention layers, feed-forward layers, and normalization layers, all working together to decipher and predict streams of tokenized data, which could include text, protein sequences, or even patches of images.
+
+### What are the Applications of Generative AI?
+Generative AI is a powerful tool for streamlining the workflow of creatives, engineers, researchers, scientists, and more. The use cases and possibilities span all industries and individuals.Generative AI models can take inputs such as text, image, audio, video, and code and generate new content into any of the modalities mentioned. For example, it can turn text inputs into an image, turn an image into a song, or turn video into text.
+
+![image](https://github.com/user-attachments/assets/49bba533-4073-4ca5-9698-0ccb66fbbf92)
+
+### Here are the most popular generative AI applications:
+Language: Text is at the root of many generative AI models and is considered to be the most advanced domain. One of the most popular examples of language-based generative models are called large language models (LLMs). Large language models are being leveraged for a wide variety of tasks, including essay generation, code development, translation, and even understanding genetic sequences.
+
+Audio: Music, audio, and speech are also emerging fields within generative AI. Examples include models being able to develop songs and snippets of audio clips with text inputs, recognize objects in videos and create accompanying noises for different video footage, and even create custom music.
+
+Visual: One of the most popular applications of generative AI is within the realm of images. This encompasses the creation of 3D images, avatars, videos, graphs, and other illustrations. There’s flexibility in generating images with different aesthetic styles, as well as techniques for editing and modifying generated visuals. Generative AI models can create graphs that show new chemical compounds and molecules that aid in drug discovery, create realistic images for virtual or augmented reality, produce 3D models for video games, design logos, enhance or edit existing images, and more.
+
+Synthetic data: Synthetic data is extremely useful to train AI models when data doesn’t exist, is restricted, or is simply unable to address corner cases with the highest accuracy. The development of synthetic data through generative models is perhaps one of the most impactful solutions for overcoming the data challenges of many enterprises. It spans all modalities and use cases and is possible through a process called label efficient learning. Generative AI models can reduce labeling costs by either automatically producing additional augmented training data or by learning an internal representation of the data that facilitates training AI models with less labeled data.
+
+The impact of generative models is wide-reaching, and its applications are only growing. Listed are just a few examples of how generative AI is helping to advance and transform the fields of transportation, natural sciences, and entertainment.
+
+In the automotive industry, generative AI is expected to help create 3D worlds and models for simulations and car development. Synthetic data is also being used to train autonomous vehicles. Being able to road test the abilities of an autonomous vehicle in a realistic 3D world improves safety, efficiency, and flexibility while decreasing risk and overhead.
+
+The field of natural sciences greatly benefits from generative AI. In the healthcare industry, generative models can aid in medical research by developing new protein sequences to aid in drug discovery. 
+
+Practitioners can also benefit from the automation of tasks such as scribing, medical coding, medical imaging, and genomic analysis. Meanwhile, in the weather industry, generative models can be used to create simulations of the planet and help with accurate weather forecasting and natural disaster prediction. These applications can help to create safer environments for the general population and allow scientists to predict and better prepare for natural disasters.
+
+All aspects of the entertainment industry, from video games to film, animation, world building, and virtual reality, are able to leverage generative AI models to help streamline their content creation process. Creators are using generative models as a tool to help supplement their creativity and work.
+
+### What are the Challenges of Generative AI?
+As an evolving space, generative models are still considered to be in their early stages, giving them space for growth in the following areas.
+
+1.Scale of compute infrastructure: Generative AI models can boast billions of parameters and require fast and efficient data pipelines to train. Significant capital investment, technical expertise, and large-scale compute infrastructure are necessary to maintain and develop generative models. For example, diffusion models could require millions or billions of images to train. Moreover, to train such large datasets, massive compute power is needed, and AI practitioners must be able to procure and leverage hundreds of GPUs to train their models.
+
+2.Sampling speed: Due to the scale of generative models, there may be latency present in the time it takes to generate an instance. Particularly for interactive use cases such as chatbots, AI voice assistants, or customer service applications, conversations must happen immediately and accurately. As diffusion models become increasingly popular due to the high-quality samples that they can create, their slow sampling speeds have become increasingly apparent.
+
+3.Lack of high-quality data: Oftentimes, generative AI models are used to produce synthetic data for different use cases. However, while troves of data are being generated globally every day, not all data can be used to train AI models. Generative models require high-quality, unbiased data to operate. Moreover, some domains don’t have enough data to train a model. As an example, few 3D assets exist and they’re expensive to develop. Such areas will require significant resources to evolve and mature.
+
+4.Data licenses: Further compounding the issue of a lack of high-quality data, many organizations struggle to get a commercial license to use existing datasets or to build bespoke datasets to train generative models. This is an extremely important process and key to avoiding intellectual property infringement issues.
+
+Many companies such as NVIDIA, Cohere, and Microsoft have a goal to support the continued growth and development of generative AI models with services and tools to help solve these issues. These products and platforms abstract away the complexities of setting up the models and running them at scale.
+
+### What are the Benefits of Generative AI?
+Generative AI is important for a number of reasons. Some of the key benefits of generative AI include:
+
+1.Generative AI algorithms can be used to create new, original content, such as images, videos, and text, that’s indistinguishable from content created by humans. This can be useful for applications such as entertainment, advertising, and creative arts.
+
+2.Generative AI algorithms can be used to improve the efficiency and accuracy of existing AI systems, such as natural language processing and computer vision. For example, generative AI algorithms can be used to create synthetic data that can be used to train and evaluate other AI algorithms.
+
+3.Generative AI algorithms can be used to explore and analyze complex data in new ways, allowing businesses and researchers to uncover hidden patterns and trends that may not be apparent from the raw data alone.
+
+4.Generative AI algorithms can help automate and accelerate a variety of tasks and processes, saving time and resources for businesses and organizations. Generative AI offers numerous advantages across various industries, enhancing productivity, creativity, and efficiency. One of its key benefits is its ability to automate content creation, generating high-quality text, images, music, and even videos. 
+
+5.This makes it invaluable in industries like marketing, journalism, and entertainment, where rapid content production is essential. Additionally, it significantly improves productivity by assisting with tasks such as summarization, translation, and coding, reducing human effort and allowing professionals to focus on higher-level decision-making. Another major advantage is personalization, as AI-powered systems can tailor responses and recommendations based on user preferences, enhancing customer experiences in areas like e-commerce and customer support. 
+
+6.Generative AI also fosters creativity by assisting artists, writers, and designers in brainstorming and producing novel ideas. Moreover, it helps businesses reduce costs by automating repetitive tasks, improving operational efficiency, and enabling scalability through AI-driven solutions like virtual assistants and chatbots.
+
+7.Privacy and security risks are another major issue, as AI models can inadvertently expose sensitive data, and technologies like deepfakes can be used for misinformation or fraud. Moreover, the increasing reliance on AI may contribute to job displacement in certain industries, as automation replaces roles traditionally performed by humans.
+
+8.Legal and regulatory frameworks for AI-generated content remain unclear, leading to potential intellectual property disputes and ethical dilemmas. Additionally, generative AI lacks true common sense and reasoning, meaning it can struggle with complex decision-making and logical analysis. While it is a powerful tool, ensuring responsible and ethical AI development is crucial to mitigating these risks and maximizing its benefits.
+
+Overall, generative AI has the potential to significantly impact a wide range of industries and applications and is an important area of AI research and development. 
